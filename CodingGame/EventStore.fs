@@ -2,7 +2,7 @@ module EventStore
 
 open System
 
-open Poker.Model
+open BlackJack.Model
 
 exception WrongExpectedVersionException
 

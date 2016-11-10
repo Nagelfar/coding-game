@@ -18,7 +18,7 @@ type Socket = {
 }
 
 let initialize(port) = { 
-    Endpoint = new IPEndPoint(IPAddress.Any, port);
+    Endpoint = new IPEndPoint(IPAddress.Parse("192.168.1.14"), port);
     Client = new UdpClient()
 }
 

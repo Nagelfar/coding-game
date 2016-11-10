@@ -1,8 +1,8 @@
-module Poker.CommandHandlers
+module BlackJack.CommandHandlers
 
 open Logging
 
-open Poker.Domain
+open BlackJack.Domain
 
 let mutable private gameTokenId:Token = Token("")
 
@@ -14,12 +14,12 @@ let changeToken token =
 
 let gameId =
     function
-    | JoinGame (token) -> changeToken (token.game)        
+    | Join (token) -> changeToken (Token(""))        
     | _ -> gameTokenId
 
 let processId = 
     function
-    | RoundStarting (token) -> changeToken token
+    // | RoundStarting (token) -> changeToken token
     | _ -> gameTokenId
 
 module Commandhandler =

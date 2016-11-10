@@ -38,17 +38,17 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
-  <ItemGroup>  
+  <ItemGroup>
     <None Include="App.config" />
     <Compile Include="Logging.fs" />
     <Compile Include="Connectivity.fs" />
-    <Compile Include="Poker/Model.fs" />
-    <Compile Include="Poker/ServerCommunication.fs" />
-    <Compile Include="Poker/Domain.fs" />
-    <Compile Include="Poker/CommandHandlers.fs" />
+    
+    <Compile Include="BlackJack/Model.fs" />
+    <!--<Compile Include="BlackJack/Domain.fs" />-->
+    <!--<Compile Include="BlackJack/CommandHandlers.fs" />    -->
+    <Compile Include="BlackJack/ServerCommunication.fs" />
     <Compile Include="EventStore.fs" />
     <Compile Include="Main.fs" />
-    
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Choose>
